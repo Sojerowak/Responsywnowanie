@@ -13,6 +13,7 @@ body,html{
 }
 .open{
     font-family: 'Open Sans', sans-serif;
+    width: 350px;
 }
 header{
     display: flex;
@@ -22,7 +23,8 @@ header{
     @media screen and (max-width: 500px) {
        width: 100%;
        font-size: smaller;
-       justify-content: space-evenly;
+       flex-direction: row;
+       justify-content: space-around;
     }
 }
 
@@ -68,13 +70,13 @@ nav{
 .heroRight img{
     width: 100%;
     @media screen and (max-width: 500px) {
-        width: 450px;
+        width: 350px;
        
      }
 }
 .heroLeft{
     display: flex;
-    align-items: center     ;
+    align-items: center;
 }
 .heroLeft__wrapper{
     padding-right: 40px;
@@ -89,7 +91,7 @@ nav{
 
  @media screen and (max-width: 500px) {
        flex-wrap: wrap;
-       width: 400px;
+       width: 300px;
   } 
 }
 
@@ -105,7 +107,7 @@ nav{
     padding: 10px 20px 10px 20px;
     border-radius: 2px;
     @media screen and (max-width: 500px) {
-        width: 100%;
+        width: 250px;
         padding-bottom: 10px;
    } 
 }
@@ -118,12 +120,18 @@ nav{
     font-weight: bold;
 
     @media screen and (max-width: 500px) {
-        width: 400px;
+        width: 250px;
         margin-top: 10px;
+        float: left;
    } 
 }
 .content{
     background-color: hsl(240, 75%, 98%);
+
+    @media screen and (max-width: 500px) {
+        width: 375px;
+        
+   } 
 }
 .contentWrapper{
     widtH: 1440px;
@@ -137,12 +145,19 @@ nav{
 }
 .contentRight, .contentLeft{
     width: 50%;
+
 }
 .contentRight img{
     width: 450px;
+
+    @media screen and (max-width: 500px) {
+        width: 350px;
+        
+   } 
 }
 .contentLeft__wrapper h2{
     font-size: 2.6rem;
+
 }
 .contentLeft__wrapper a{
     color: #359a84;
@@ -153,6 +168,11 @@ nav{
 .contentLeft__wrapper{
     padding-right: 180px;
     line-height: 3.6rem;
+
+    @media screen and (max-width: 500px) {
+        padding-right: 0px;
+        width: 350px;
+    } 
 }
 .wave_wrapper{
     width: 100%;
@@ -205,6 +225,11 @@ nav{
     margin: 0 auto 0 auto;
     display: flex;
     padding: 80px 0 80px 0;
+
+    @media screen and (max-width: 500px) {
+        width: 375px;
+       flex-direction: column;
+     } 
 }
 .accessLeft{
     color: white;
@@ -221,6 +246,15 @@ nav{
 }
 .accessLeft p{
     padding-right: 280px;
+}
+
+.accessRight {
+    @media screen and (max-width: 500px) {
+       display: flex;
+       flex-direction: column;
+       float: left;
+    } 
+    
 }
 .accessRight__input{
     width: 100%;
@@ -247,10 +281,18 @@ footer a{
 .footerWrapper{
     width: 1440px;
     margin: 0 auto 0 auto;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+   } 
 }
 .footerWrapper__logo{
     width: 1440px;
     margin: 0 auto 0 auto;
+    
+    @media screen and (max-width: 500px) {
+        width: 100%;
+   } 
 }
 .footerWrapper__logo img{
     filter: brightness(0) invert(1);
