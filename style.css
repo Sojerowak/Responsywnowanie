@@ -64,6 +64,7 @@ nav{
         flex-direction: column-reverse;
         flex-wrap: wrap;
         width: 100%;
+        text-align: center;
      }
 }
 .heroLeft, .heroRight{
@@ -90,7 +91,7 @@ nav{
 }
 
 .raleway{
-
+  text-align: center;
  @media screen and (max-width: 500px) {
        flex-wrap: wrap;
        width: 300px;
@@ -132,7 +133,7 @@ nav{
 
     @media screen and (max-width: 500px) {
         width: 375px;
-        
+        text-align: center;
    } 
 }
 .contentWrapper{
@@ -190,6 +191,12 @@ nav{
     margin-top: 80px;
     margin-bottom: 80px;
     border-radius: 5px;
+
+    @media screen and (max-width: 500px) {
+        max-width: 100%;
+        width: 300px;
+       height: 200ox;
+    } 
 }
 .commentWrapper img{
     width: 20px;
@@ -221,6 +228,9 @@ nav{
 }
 .access{
     background-color: #575989;
+    @media screen and (max-width: 500px) {
+       text-align: center;
+     } 
 }
 .accessWrapper{
     width: 1440px;
@@ -236,6 +246,10 @@ nav{
 .accessLeft{
     color: white;
     width: 55%;
+    text-align: center;
+    @media screen and (max-width: 500px) {
+        text-align: center;
+      } 
 }
 .accessRight{
     width: 45%;
@@ -260,17 +274,26 @@ nav{
 }
 .accessRight__input{
     width: 100%;
+    float: left;
 }
 .accessRight__input input{
     width: 80%;
     padding: 10px 20px 10px 20px;
+    float: left;
 }
 .accessRight a{
     background-color: hsl(224, 93%, 58%);
     color: white;
     padding: 10px 50px 10px 50px;
     text-decoration: none;
+    margin-left: 10px;
     font-weight: bold;
+
+    @media screen and (max-width: 500px) {
+        width: 250px;
+        margin-top: 10px;
+        float: left;
+   } 
 }
 footer{
     background-color: #07043b;
@@ -316,4 +339,8 @@ footer a{
 .col2 nav .col3 nav{
     display: flex;
     justify-content: start;
+}
+
+ul {
+  list-style-type: none; 
 }
